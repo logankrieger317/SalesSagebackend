@@ -24,8 +24,10 @@ const getOneProfile = async (req, res) => {
 
 const createProfile = async (req, res) => {
   try {
-    const profile = await new profile(req.body)
-    await Profile.save()
+    const { userId, ...profileData } = req.body;
+    const profile = await Profile.create({ user: userId, ...profileData });
+    // const profile = await new Profile(req.body)
+    await profile.save()
     res.status(201).json(profile)
   } catch (error) {
     console.log(error)
