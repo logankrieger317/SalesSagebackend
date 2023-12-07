@@ -47,6 +47,7 @@ const main = async () => {
       title: 'Craft Beer Sampler',
       description: 'Experience a variety of handcrafted beers with our Craft Beer Sampler. Perfect for beer enthusiasts looking to explore different flavors and styles.',
       price: '15',
+      image: 'https://i5.walmartimages.com/seo/Beer-Tasting-Flight-Sampler-Set-of-4-6oz-Pilsner-Craft-Brew-Glasses-with-Paddle-and-Chalkboard-Great-Gift_0ae1b549-8036-4886-a932-6fec4d573d0b.f8990d3e44af450581e3153bd86be86f.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF',
       brand: brand1._id
     },
    {
